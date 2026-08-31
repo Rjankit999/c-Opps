@@ -4,18 +4,25 @@ using namespace std;
 class teacher{
 
     public:
-    
+
+        teacher(string n, int a, int s){
+            cout<<"This is contructer"<<endl;
+            name=n;
+            age=a;
+            selary=s;
+        }
+
+
         string name;
         int age;
         int selary;
-        
+        void getinfo(){
+            cout<<"name"<<name<<endl;
+        }
 
 
 };
 int main(){
-    teacher t1;
-    t1.age=18;
-    t1.name="Ankit Maurya";
-    t1.selary=50000;
-    cout<<t1.name;
+    teacher t1("Ankit",20,50000);
+    t1.getinfo();
 }
