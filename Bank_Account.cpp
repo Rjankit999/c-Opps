@@ -36,4 +36,4 @@ int main(){
     user1.wedraw(2000);
     user1.display();
 
-}
+} 
