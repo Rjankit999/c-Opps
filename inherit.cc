@@ -4,6 +4,9 @@ class student{
     public:
     int age;
     string name;
+    ~student(){
+        cout<<"student"<<endl;
+    }
     
 };
 
@@ -23,8 +26,14 @@ class teacher : public student{
         cout<<"age: "<<age<<endl;
         cout<<"roll: "<<roll<<endl;
     }
+    ~teacher(){
+        cout<<"teacher"<<endl;
+    }
 };
 
 int main(){
+
+teacher t(5,18);
+t.gitinfo();
   
 }
