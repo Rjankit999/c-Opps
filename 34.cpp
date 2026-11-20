@@ -5,6 +5,9 @@ class Bank{
     private:
    int balance=10000;
    public:
+   void setter(int salary){
+    balance+=salary;
+   }
    void show(){
     cout<<balance;
    }
@@ -13,6 +16,7 @@ class Bank{
 
 int main(){
    Bank user;
+   user.setter(500);
    user.show();
     return 0;
 }
